@@ -1,0 +1,48 @@
+.select-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the select horizontally */
+  padding: 20px;
+}
+
+select {
+  padding: 12px 20px;  /* Increases the padding to make the select taller */
+  font-size: 16px;     /* Increases the font size for better readability */
+  width: 50%;          /* Adjusts the width to make the select wider */
+  border-radius: 8px;  /* Adds rounded corners for a modern look */
+  border: 1px solid #ccc; /* Light grey border for subtle styling */
+  cursor: pointer; /* Indicates that the element is interactive */
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+  gap: 20px;
+}
+
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.person-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.person-info {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+<div class="select-wrapper">
+  <select (change)="filterByProfession($event)">
+    <option value="">Select Profession</option>
+    @for (profession of professions; track profession) {
+      <option value="{{ profession }}">{{ profession }}</option>
+    }    
+  </select>
+</div>
+
+<div class="container">
+  @for (person of filteredData; track person.id) {
+    <div class="person-card">
+      <img [src]="person.photo" alt="Photo of {{ person.name }}" class="person-photo">
+      <div class="person-info">
+        <h2 class="person-name">{{ person.name }}</h2>
+      </div>
+    </div>
+  }
+</div>
